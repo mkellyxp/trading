@@ -1,4 +1,6 @@
 defmodule TradingWeb.Router do
+  alias TradingWeb.HelloController
+
   use TradingWeb, :router
 
   pipeline :browser do
@@ -18,6 +20,7 @@ defmodule TradingWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/hello", HelloController, :index
   end
 
   # Other scopes may use custom stacks.
