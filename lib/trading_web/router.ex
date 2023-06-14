@@ -1,6 +1,4 @@
 defmodule TradingWeb.Router do
-  alias TradingWeb.HelloController
-
   use TradingWeb, :router
 
   pipeline :browser do
