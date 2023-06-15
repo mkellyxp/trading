@@ -5,4 +5,8 @@ defmodule TradingWeb.HelloController do
     render(conn, :index)
   end
 
+  def show(conn, %{"messanger" => messanger}) do
+    render(conn, :show, messanger: messanger)
+  end
+
 end

@@ -19,6 +19,8 @@ defmodule TradingWeb.Router do
 
     get "/", PageController, :home
     get "/hello", HelloController, :index
+    get "/hello/:messanger", HelloController, :show
+
   end
 
   # Other scopes may use custom stacks.
